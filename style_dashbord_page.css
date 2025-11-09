@@ -2664,6 +2664,9 @@ label {
     padding: 0;
     height: 100vh;
   }
+  .nav-links{
+    height: 1010px;
+  }
 
   /* .nav {
     height: 100vh;
@@ -2678,9 +2681,15 @@ label {
     padding-right: 0;
   }
 
-  .cards_notif {
-    padding-left: 20px;
+  .nav-links{
+    /* height: 100vh; */
+    height: 1210px;
   }
+
+  .cards_notif {
+    width: 300px;
+    padding-left: 20px;
+   } 
 
   .commande1,
   .commande2,
@@ -2696,6 +2705,11 @@ label {
   .gestion_analyt {
     width: 100%;
     gap: 10px;
+  }
+  .gestion_rapport {
+    display: flex;
+    width: 100%;
+    gap: 20px;
   }
 
   .analytic {
