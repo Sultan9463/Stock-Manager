@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="style_dashbord_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="logo">
+            <h2>Gestion de Stock - Produits Électroniques</h2>
+            <div class="admins">
+                <div class="notif">3</div>
+                <div class="notif1"><i class="fa-solid fa-bell"></i></div>
+                <div class="icons"><i class="fa-solid fa-circle-user"></i>
+                    <h2>Administrateur</h2>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <div class="menu">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>Dashbord</h1>
+            </div>
+            <div class="menu-acceuil">
+                <div class="nav">
+                    <a href="index_table_de_bord.html"><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</a>
+                    <a href="index_analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                    <a href="index_commande.html"><i class="fa-solid fa-cart-plus"></i> Commandes</a>
+                    <a href="index_parametre.html" class="bleu_tab"><i class="fa-solid fa-gears"></i> paramètre</a>
+                    <a href="index_rapport.html"> <i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                    <a href="index_notification.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                </div>
+
+                <div class="sitting">
+                    <div class=" admin"> <i class="fa-solid fa-circle-user"></i>
+                        <p>Administrateur Gestionnaire</p>
+                    </div>
+                    <div class=" Profil"> <i class="fa-solid fa-circle-user"></i>
+                        <a href="#sultan" id="close">
+                            <p>Mon profil</p>
+                        </a>
+                    </div>
+                    <div class=" connecter"> <i class="fa-solid fa-arrow-right-to-bracket"></i><a href="index.html">Se
+                            Deconnecter</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="Bord_principal">
+        <div class="titre">
+            <h1><i class="fa-solid fa-gears"></i> Paramètres & Configuration</h1>
+            <p>Configuration du système et préférences utilisateur</p>
+        </div>
+
+        <div class="Tableau_rapport">
+            <div class="historique">
+                <i class="fa-solid fa-sliders"></i>
+                <h2>Historique des Rapports</h2>
+            </div>
+            <div class="notification_">
+                <div class="notification-box">
+                    <div class="text">
+                        <h3>Notifications</h3>
+                        <p>Recevoir des notifications par email</p>
+                    </div>
+                    <!-- Le bouton switch -->
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="notification-box">
+                    <div class="text">
+                        <h3>Mode Sombre</h3>
+                        <p>Activer le theme sombre</p>
+                    </div>
+                    <!-- Le bouton switch -->
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="notification-box">
+                    <div class="text">
+                        <h3>Auto-sauvegarde</h3>
+                        <p>Sauvegarder automatiquement les modifications</p>
+                    </div>
+                    <!-- Le bouton switch -->
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+                <div class="notification-box">
+                    <div class="text">
+                        <h3>Langue</h3>
+                        <p>Langue de l'interface</p>
+                    </div>
+                    <!-- Le bouton switch -->
+                    <select name="langue" id="langue">
+                        <option value="Français">Français</option>
+                        <option value="anglais">English</option>
+                        <option value="japonais">Japonais</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="Tableau_rapport">
+            <div class="historique">
+                <i class="fa-solid fa-boxes-stacked"></i>
+                <h2>Gestion de Stock</h2>
+            </div>
+            <div class="notification_">
+                <div class="notification-box">
+                    <div class="text">
+                        <h3>Notifications</h3>
+                        <p>Recevoir des notifications par email</p>
+                    </div>
+                    <!-- Le bouton switch -->
+                    <input type="number" id="quantite" name="quantite" min="0" max="10" value="1" class="typ_number">
+                </div>
+
+                <div class="notification-box">
+                    <div class="text">
+                        <h3>Auto-commande</h3>
+                        <p>Commander automatiquement en cas de stock faible</p>
+                    </div>
+                    <!-- Le bouton switch -->
+                    <label class="switch">
+                        <input type="checkbox" checked>
+                        <span class="slider"></span>
+                    </label>
+                </div>
+
+                <div class="notification-box">
+                    <div class="text">
+                        <h3>Devise</h3>
+                        <p>Devise d'affichage</p>
+                    </div>
+                    <!-- Le bouton switch -->
+                    <select name="langue" id="langue">
+                        <option value="Euro (€)">Euro (€)</option>
+                        <option value="Dollar">Dollar</option>
+                        <option value="FCFA">FCFA</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="Tableau_rapport">
+            <div class="historique">
+                <i class="fa-solid fa-shield"></i>
+                <h2>Sécurité</h2>
+            </div>
+            <div class="notification_">
+                <div class="notification-box1">
+                    <div class="text">
+                        <h3>Authentification à deux facteurs</h3>
+                        <p>Activer la 2FA pour plus de sécurité</p>
+                    </div>
+                    <div class="securi">
+                        <p> Activer</p>
+                    </div>
+                </div>
+
+                <div class="notification-box1">
+                    <div class="text">
+                        <h3>Changer le mot de passe</h3>
+                        <p>Modifier votre mot de passe actuel</p>
+                    </div>
+                    <div class="securi1">
+                        <p> changer</p>
+                    </div>
+                </div>
+                <div class="notification-box1">
+                    <div class="text">
+                        <h3>Authentification à deux facteurs</h3>
+                        <p>Activer la 2FA pour plus de sécurité</p>
+                    </div>
+                    <div class="securi2">
+                        <p> Voir(3)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="Tableau_rapport">
+            <div class="historique">
+                <i class="fa-solid fa-database"></i>
+                <h2>Système</h2>
+            </div>
+            <div class="notification_system">
+                <div class="systm">
+                    <i class="fa-solid fa-floppy-disk"></i>
+                    <h3>Exporter les paramètres</h3>
+
+                </div>
+                <div class="systm_1">
+                    <i class="fa-solid fa-download"></i>
+                    <h3>Sauvegarder la configuration</h3>
+
+                </div>
+
+                <div class="systm_2">
+                    <i class="fa-solid fa-rotate-left"></i>
+                    <h3>Réinitialiser par défaut</h3>
+
+                </div>
+                <div class="systm_2">
+                    <i class="fa-solid fa-trash"></i>
+                    <h3>Effacer toutes les données</h3>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <div class="profile" id="sultan">
+
+        <div class="mon_profile">
+            <div class="card_users">
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+                <a href="#close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <div class="photo">
+                <div class="ron_im">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="tope">
+                    <h3>Changer la Photo</h3>
+                </div>
+            </div>
+
+            <div class="input_inscrip">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Administrateur" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Jean" class="Nom">
+                </div>
+            </div>
+            <div class="input_inscrip">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="email" placeholder="admin@dashboard.com" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="+33 6 12 34 56 78" class="Nom">
+                </div>
+            </div>
+
+            <div class="role">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Gestionnaire" class="role1">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="15 Janvier 2024 à 14:30" class="role1">
+                </div>
+            </div>
+
+            <div class="save">
+                <div class="close">
+                    <p> Fermer</p>
+                </div>
+
+                <div class="sauve">
+                    <p>Sauvegarder</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="style_dashbord_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <div class="logo">
+            <h2>Gestion de Stock - Produits Électroniques</h2>
+            <div class="admins">
+                <div class="notif">3</div>
+                <div class="notif1"><i class="fa-solid fa-bell"></i></div>
+                <div class="icons"><i class="fa-solid fa-circle-user"></i>
+                    <h2>Administrateur</h2>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+
+            <div class="menu">
+                <i class="fa-solid fa-chart-line"></i>
+                <h1>Dashbord</h1>
+            </div>
+
+            <div class="menu-acceuil">
+                <div class="nav">
+                    <a href="index_table_de_bord.html"><i class="fa-solid fa-gauge-high"></i> Tableau de Bord</a>
+                    <a href="index_analytics.html"><i class="fa-solid fa-chart-line"></i> Analytics</a>
+                    <a href="index_commande.html" class="bleu_tab"><i class="fa-solid fa-cart-plus"></i> Commandes</a>
+                    <a href="index_parametre.html"><i class="fa-solid fa-gears"></i> paramètre</a>
+                    <a href="index_rapport.html"> <i class="fa-solid fa-chart-bar"></i> Rapports</a>
+                    <a href="index_notification.html"><i class="fa-solid fa-bell"></i> Notifications</a>
+                </div>
+
+                <div class="sitting">
+                    <div class=" admin"> <i class="fa-solid fa-circle-user"></i>
+                        <p>Administrateur Gestionnaire</p>
+                    </div>
+                    <div class=" Profil"> <i class="fa-solid fa-circle-user"></i>
+                        <a href="#sultan" id="close">
+                            <p>Mon profil</p>
+                        </a>
+                    </div>
+                    <div class=" connecter"> <i class="fa-solid fa-arrow-right-to-bracket"></i><a href="index.html">Se
+                            Deconnecter</a></div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <section class="Bord_principal">
+        <div class="titre">
+            <h1><i class="fa-solid fa-cart-plus"></i> Gestion des Commandes</h1>
+            <p>Suivi et gestion complète des commandes clients</p>
+        </div>
+        <div class="gestion">
+            <div class="cards_notif">
+                <div class="imoj1_notif"><i class="fa-solid fa-clock"></i></div>
+                <div class="cards1">
+                    <h2>23</h2>
+                    <p>En attente</p>
+                </div>
+            </div>
+
+            <div class="cards_notif">
+                <div class="imoj2_notif"><i class="fa-solid fa-gears"></i></div>
+                <div class="cards1">
+                    <h2>45</h2>
+                    <p>En cours</p>
+                </div>
+            </div>
+
+            <div class="cards_notif">
+                <div class="imoj3_notif"><i class="fa-solid fa-truck-fast"></i></div>
+                <div class="cards1">
+                    <h2>67</h2>
+                    <p>Expédiées</p>
+                </div>
+            </div>
+
+            <div class="cards_notif">
+                <div class="imoj4_notif"><i class="fa-solid fa-square-check"></i></div>
+                <div class="cards1">
+                    <h2>234</h2>
+                    <p>Livrées</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="filtre">
+            <div class="type">
+                <label for="Toutes">Statut : </label><br>
+                <select name="Toutes" id="Toutes">
+                    <option value="Toutes">Toutes les status </option>
+                    <option value="Non lues">Non lues</option>
+                    <option value="lues">Lues</option>
+                </select>
+            </div>
+
+            <div class="type">
+                <label for="Toutes">Priorité : </label><br>
+                <select name="Toutes" id="Toutes">
+                    <option value="Toutes">Ajourd'hui</option>
+                    <option value="Urgent">Urgent</option>
+                    <option value="Haute">Haute</option>
+                    <option value="Moyenne">Moyenne</option>
+                    <option value="basse">Basse</option>
+                </select>
+            </div>
+
+            <div class="recher_input-test">
+                <input class="rech" type="text" placeholder="Rechercher une commande.">
+
+                <div class="input-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="CDM">
+            <div class="CD">
+                <div class="CDM-1">
+                    <h4>Commande #CMD-2024-001</h4>
+                    <div class="CDM-1">
+                        <h5>Client : Jean Dupont <br>Date : 15 Jan 2024</h5>
+                    </div>
+                </div>
+                <div class="CDM-2">
+                    <p>En attente</p>
+                    <h6>€1,199.00</h6>
+                </div>
+            </div>
+
+            <div class="iphon-15">
+                <div class="Iph_15">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <p><strong>iPhone 15 Pro</strong>128GB - Bleu</p>
+                </div>
+                <p>x1</p>
+                <h2>€1,199.00</h2>
+                <h3>€1,199.00</h3>
+            </div>
+            <div class="les_detail">
+                <a href="#sultan_blh" id="fermer">
+                    <button type="submit">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Voir détails
+                    </button>
+                </a>
+
+                <a href="#sultan_B">
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Modifier
+                    </button>
+                </a>
+                <button class="btn1" type="submit">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Traiter
+                </button>
+
+            </div>
+        </div>
+
+        <div class="CDM">
+            <div class="CD">
+                <div class="CDM-1">
+                    <h4>Commande #CMD-2024-002</h4>
+                    <div class="CDM-1">
+                        <h5>Client : Marie Martin <br>Date : 14 Jan 2024</h5>
+                    </div>
+                </div>
+                <div class="CDM-2">
+                    <p>En attente</p>
+                    <h6>€2,899.00</h6>
+                </div>
+            </div>
+            <div class="iphon-15">
+                <div class="Iph_15">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <p><strong>MacBook Pro 16"</strong> M3 Pro - 512GB</p>
+                </div>
+                <p>x1</p>
+                <!-- <h2>€1,199.00</h2> -->
+                <h3>€2,899.00</h3>
+            </div>
+            <div class="les_detail">
+                <a href="#sultan_blh" id="fermer">
+                    <button type="submit">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Voir détails
+                    </button>
+                </a>
+
+                <a href="#sultan_B">
+                    <button class="btn" type="submit">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        Modifier
+                    </button>
+                </a>
+                <button class="btn-expedier" type="submit">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Expédier
+                </button>
+
+            </div>
+        </div>
+
+        <div class="CDM">
+
+            <div class="CD">
+                <div class="CDM-1">
+                    <h4>Commande #CMD-2024-003</h4>
+                    <div class="CDM-1">
+                        <h5>Client : Pierre Durand <br>Date : 13 Jan 2024</h5>
+                    </div>
+                </div>
+                <div class="CDM-2">
+                    <p>Expédier</p>
+                    <h6>€558.00</h6>
+                </div>
+            </div>
+            <div class="iphon-15">
+                <div class="Iph_15">
+                    <i class="fa-solid fa-headphones"></i>
+                    <p><strong>AirPods Pro 2</strong> USB-C</p>
+                </div>
+                <p>x2</p>
+                <!-- <h2>€1,199.00</h2> -->
+                <h3>€558.00</h3>
+            </div>
+
+
+            <div class="les_detail">
+                <a href="#sultan_blh" id="fermer">
+                    <button type="submit">
+                        <i class="fa-solid fa-mobile-screen-button"></i> Voir détails
+                    </button>
+                </a>
+                <button class="btn-expedier" type="submit">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Suivre
+                </button>
+                <button class="btn1" type="submit">
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    Marquer livrée
+                </button>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="profile" id="sultan">
+
+        <div class="mon_profile">
+            <div class="card_users">
+                <div class="user">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <h3>Mon Profil</h3>
+                </div>
+                <a href="#close"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+
+            <div class="photo">
+                <div class="ron_im">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="tope">
+                    <h3>Changer la Photo</h3>
+                </div>
+            </div>
+
+            <div class="input_inscrip">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Administrateur" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Jean" class="Nom">
+                </div>
+            </div>
+            <div class="input_inscrip">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="email" placeholder="admin@dashboard.com" class="Nom">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="+33 6 12 34 56 78" class="Nom">
+                </div>
+            </div>
+
+            <div class="role">
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="Gestionnaire" class="role1">
+                </div>
+                <div>
+                    <label for="Toutes">Statut : </label><br>
+                    <input type="text" placeholder="15 Janvier 2024 à 14:30" class="role1">
+                </div>
+            </div>
+
+            <div class="save">
+                <div class="close">
+                    <p> Fermer</p>
+                </div>
+
+                <div class="sauve">
+                    <p>Sauvegarder</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="les_detai" id="sultan_blh">
+        <div class="CMD-Detail">
+            <div class="detail_1">
+                <i class="fa-solid fa-eye"></i>
+                <h2>Détails de la Commande</h2>
+            </div>
+
+            <main class="CDM-main">
+                <div class="det">
+                    <h4>Informations Commande</h4>
+                    <div class="detail_2">
+                        <div class="detail_2_1">
+                            <p>Numero de commande.</p>
+                            <h3>Commande #CMD-2024-002</h3>
+                        </div>
+
+                        <div class="detail_2_2">
+                            <p>Date de commande:</p>
+                            <h3>14 Jan 2024</h3>
+                        </div>
+                    </div>
+
+                    <div class="detail_2">
+                        <div class="detail_2_1">
+                            <p>Statut:</p>
+                            <h3>En cours</h3>
+                        </div>
+
+                        <div class="detail_2_2">
+                            <p>Total :</p>
+                            <h3>€2,899.00</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="det">
+                    <h4>Informations Client</h4>
+                    <div class="detail_2">
+                        <div class="detail_2_1">
+                            <p>Nom :</p>
+                            <h3>Marie Martin</h3>
+                        </div>
+
+                        <div class="detail_2_2">
+                            <p>Email :</p>
+                            <h3>jean.dupont@email.com</h3>
+                        </div>
+                    </div>
+
+                    <div class="detail_2">
+                        <div class="detail_2_1">
+                            <p>Téléphone:</p>
+                            <h3>+33 6 12 34 56 78</h3>
+                        </div>
+
+                        <div class="detail_2_2">
+                            <p>Adresse :</p>
+                            <h3>123 Rue de la Paix, 75001 Paris</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="det">
+                    <h4>Articles Commandés</h4>
+                    <div class="mobile">
+                        <div class="detail_2_mobile">
+                            <div class="detail_mobil">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <p>1</p>
+                            </div>
+                            <p>iPhone 15 Pro 128GB - Bleu</p>
+                        </div>
+
+                        <div class="detail_2_mobile">
+                            <div class="prix">
+                                <h3>€1,199.00</h3>
+                                <h2>€1,199.00</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="impression">
+                <a href="#fermer">
+                    <div class="Fermer">
+                        <h3>Fermer</h3>
+                    </div>
+                </a>
+                <div class="imprimer">
+                    <h3>imprimer</h3>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="Modifier" id="sultan_B">
+
+        <div class="modifi">
+            <div class="detail_1">
+                <i class="fa-solid fa-pen-to-square"></i>
+                <h2>Modifier la Commande</h2>
+            </div>
+
+            <main class="CDM-main">
+                <div class="det">
+                    <h4>Statut de la commande</h4>
+
+                    <div class="detail_2">
+                        <div class="CDM-statut">
+                            <label for="#">Statut : </label><br>
+                            <select name="En cours" id="#">
+                                <option value="En cours">En cours</option>
+                                <option value="Urgent">Urgent</option>
+                                <option value="Haute">Haute</option>
+                                <option value="Moyenne">Moyenne</option>
+                                <option value="basse">Basse</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="det">
+                    <h4>Informations de livraison</h4>
+                    <div class="detail_2">
+                        <div class="CDM-adresse">
+                            <label for="#">Adresse de livraison</label><br>
+                            <textarea name="Adresse" id="Adresse"
+                                placeholder="123 Rue de la Paix, 75001 Paris"> </textarea>
+                        </div>
+                    </div>
+
+                    <div class="detail_2">
+                        <div class="CDM-date">
+                            <label for="#">Statut : </label><br>
+                            <input type="date" placeholder="">
+                        </div>
+                    </div>
+                </div>
+                <div class="det">
+                    <h4>Notes</h4>
+                    <div class="detail_2">
+                        <div class="CDM-adresse">
+                            <label for="#">Notes internes:</label><br>
+                            <textarea name="Adresse" id="Adresse"
+                                placeholder="123 Rue de la Paix, 75001 Paris"> </textarea>
+                        </div>
+                    </div>
+
+                    <div class="detail_2">
+                        <div class="CDM-date">
+                            <label for="#">Statut : </label><br>
+                            <input type="date" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+
+            </main>
+
+
+
+
+
+            <footer class="impression">
+                <a href="#fermer">
+                    <div class="Fermer">
+                        <h3>Annuler</h3>
+                    </div>
+                </a>
+                <div class="Sauvegarder">
+                    <h3>Sauvegarder</h3>
+                </div>
+            </footer>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>

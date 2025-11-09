@@ -1,0 +1,399 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 40px;
+}
+
+/* table de bord */
+.Bord_principal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6;
+    gap: 34px;
+}
+
+.gestion {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 80px;
+}
+
+.stocks {
+    display: flex;
+    width: 98%;
+    flex-direction: column;
+}
+
+.entete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: solid rgb(207, 204, 199);
+    width: 100%;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 70px;
+}
+
+.ajout_produit {
+    display: flex;
+    gap: 20px;
+}
+
+.ajout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    background-color: #296EED;
+}
+
+.export {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    border: solid rgb(207, 204, 199);
+    width: 150px;
+    height: 50px;
+    color: #131212;
+    gap: 10px;
+}
+
+input {
+    width: 350px;
+    height: 44px;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: solid rgb(207, 204, 199);
+}
+
+.Bord_principal p {
+    font-size: 20px;
+}
+
+.Bord_principal h1 {
+    font-size: 2rem;
+}
+
+.imoj1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #296EED;
+}
+
+.imoj2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #E89307;
+}
+
+.imoj3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #04AE7F;
+}
+
+.imoj4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #67778D;
+}
+
+.cards i {
+    font-size: 40px;
+    color: white
+}
+
+.cards1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 13px;
+}
+
+tr {
+    border: 2px solid rgb(207, 204, 199);
+    height: 60px;
+    text-align: left;
+}
+
+th {
+    padding-left: 20px;
+
+}
+
+.table1 {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.table2 {
+    border-collapse: collapse;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid rgb(207, 204, 199);
+}
+
+.colonne1 {
+    width: 170px;
+}
+
+.colonne2 {
+    width: 400px;
+}
+
+.colonne3 {
+    width: 300px;
+}
+
+.colonne4,
+.colonne5,
+.colonne6,
+.colonne7 {
+    width: 170px;
+}
+
+.titre_tableau {
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-bottom: none;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.etiquette {
+    height: 60px;
+    background-color: #F2F1F1;
+}
+
+.imoj {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #F9FAFC;
+}
+
+.imoj i {
+    font-size: 20px;
+    color: #707E94;
+}
+
+.imoj_2 i {
+    font-size: 20px;
+    color: #707E94;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    width: 380px;
+    height: 170px;
+    border: solid rgb(242, 240, 238);
+    border-radius: 20px;
+    gap: 20px;
+    padding-left: 30px;
+    background-color: white;
+}
+
+.cards_ {
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    width: auto;
+    height: 80px;
+    width: 240px;
+    gap: 8px;
+}
+
+.cards_ p {
+    font-size: 16px;
+}
+
+.cards h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+.cards_2 {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100px;
+    gap: 18px;
+}
+
+.dollar {
+    width: 100px;
+}
+
+.LAPTOP {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: #DFECFD;
+    color: #5371CD;
+    font-size: 13px;
+}
+
+.P15 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #E2FCEA;
+}
+
+.actif {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 26px;
+    border-radius: 15px;
+    background-color: #E2FCEA;
+}
+
+.SMARTPHONE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 13px;
+    background-color: #E2FCEA;
+}
+
+.P8 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #FFF5CE;
+}
+
+.AUDIO {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 13px;
+    background-color: #FFF5CE;
+}
+
+.P3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #FFE6E7;
+}
+
+.faible1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #FFF5CE;
+}
+
+.TABLETTE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 13px;
+    background-color: #DFECFD;
+}
+
+.TV {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+    background-color: #FFE6E7;
+
+}
+
+
+
+@media (max-width: 768px) {
+    .gestion {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .entete {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        padding: 0;
+    }
+
+}
