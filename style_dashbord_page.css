@@ -2656,7 +2656,7 @@ label {
     display: flex;
     width: 100%;
     padding-right: 30px;
-    gap: 50px;
+    gap: 30px;
   }
 
   body {
