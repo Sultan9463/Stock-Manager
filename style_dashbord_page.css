@@ -2647,6 +2647,9 @@ label {
   .Bord_principal_notif {
     height: auto;
   }
+  .nav-links{
+    height: 100%;
+  }
 
   .Bord_principal {
     height: auto;
@@ -2664,9 +2667,6 @@ label {
     padding: 0;
     height: 100vh;
   }
-  .nav-links{
-    height: 1010px;
-  }
 
   /* .nav {
     height: 100vh;
@@ -2680,16 +2680,17 @@ label {
     gap: 10px;
     padding-right: 0;
   }
-
-  .nav-links{
-    /* height: 100vh; */
-    height: 1210px;
-  }
+   /* .nav-links{
+    max-height: 100vh
+  } */
 
   .cards_notif {
     width: 300px;
     padding-left: 20px;
    } 
+   /* .nav-links{
+    height: 100vh;
+  } */
 
   .commande1,
   .commande2,
@@ -2925,6 +2926,9 @@ label {
     width: 100%;
     /* padding-left: 0; */
     margin-left: 0;
+  }
+  .nav-links{
+    height: 100vh;
   }
 
   .nav-links {
