@@ -11,6 +11,7 @@ body {
   background-color: white;
 }
 
+
 header {
   display: flex;
   align-items: center;
@@ -3183,4 +3184,110 @@ label {
   .historique i {
     font-size: 20px;
   }
+}
+
+
+@media (max-width: 425px) {
+
+  .admins{
+    display: none;
+  }
+
+  .menu-icon {
+    display: flex;
+  }
+  .gestion {
+    width: 440px;
+    display: grid;
+    grid-template-columns: 350px;
+  }
+
+  .cards_notif {
+    width: 350px;
+  }
+
+  .gestion_analyt {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .analytic {
+    width: 345px;
+    height: 130px;
+  }
+
+  .filtre{
+    width: 98%;
+  }
+   .raport {
+    width: 100%;
+  }
+  .Tableau_rapport{
+    width: 98%;
+    
+  }
+  .lign1, .lign2{
+    font-size: 12px;
+  }
+  .cards_2_his i{
+    font-size: 10px;
+  }
+
+  .cards_notif{
+    width: 370px;
+  }
+  .marque{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .les_detail{
+    flex-direction: column;
+  }
+  .stocks{
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 375px) {
+  .menu-icon {
+    display: flex;
+  }
+
+   .cards_notif{
+    width: 300px;
+  }
+  .analytic {
+    width: 310px;
+    height: 130px;
+  }
+    .stocks{
+      overflow-x: auto;
+    width: 100%;
+  }
+  .table2{
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .analytic {
+    width: 280px;
+    height: 130px;
+  }
+    .stocks{
+    overflow-x: auto;
+    width: 100%;
+  }
+  .table2{
+    width: 100%;
+
+  }
+
 }
