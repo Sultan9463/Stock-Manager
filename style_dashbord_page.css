@@ -115,8 +115,15 @@ header {
 
 
 @keyframes flotant {
-    0%, 100% { transform: scale(1); }
-    50% { transform: scale(1.1); }
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
 }
 
 .notif1 {
@@ -2006,7 +2013,8 @@ button {
   width: 120px;
   border: none;
   color: black;
-  background-color: #dcdcdc;;
+  background-color: #dcdcdc;
+  ;
   /* background-color: #F2F2F2; */
   border-radius: 10px;
   cursor: pointer;
@@ -2614,7 +2622,7 @@ label {
   line-height: 1.9rem;
 }
 
-.CDM-statut select{
+.CDM-statut select {
   height: 70px;
 }
 
@@ -2677,7 +2685,8 @@ label {
   .Bord_principal_notif {
     height: auto;
   }
-  .nav-links{
+
+  .nav-links {
     height: 100%;
   }
 
@@ -2687,10 +2696,17 @@ label {
 
   .gestion {
     display: flex;
-    width: 100%;
+    width: 97%;
     padding-right: 30px;
     gap: 30px;
   }
+
+  .gestion_rapport {
+    display: flex;
+    width: 97%;
+    gap: 13px;
+  }
+
 
   body {
     width: 100%;
@@ -2710,15 +2726,17 @@ label {
     gap: 10px;
     padding-right: 0;
   }
-   /* .nav-links{
+
+  /* .nav-links{
     max-height: 100vh
   } */
 
   .cards_notif {
     width: 300px;
     padding-left: 20px;
-   } 
-   /* .nav-links{
+  }
+
+  /* .nav-links{
     height: 100vh;
   } */
 
@@ -2737,6 +2755,7 @@ label {
     width: 100%;
     gap: 10px;
   }
+
   .gestion_rapport {
     display: flex;
     width: 100%;
@@ -2957,7 +2976,8 @@ label {
     /* padding-left: 0; */
     margin-left: 0;
   }
-  .nav-links{
+
+  .nav-links {
     height: 100vh;
   }
 
@@ -3218,13 +3238,14 @@ label {
 
 @media (max-width: 425px) {
 
-  .admins{
+  .admins {
     display: none;
   }
 
   .menu-icon {
     display: flex;
   }
+
   .gestion {
     width: 440px;
     display: grid;
@@ -3245,35 +3266,43 @@ label {
     height: 130px;
   }
 
-  .filtre{
+  .filtre {
     width: 98%;
   }
-   .raport {
+
+  .raport {
     width: 100%;
   }
-  .Tableau_rapport{
+
+  .Tableau_rapport {
     width: 98%;
-    
+
   }
-  .lign1, .lign2{
+
+  .lign1,
+  .lign2 {
     font-size: 12px;
   }
-  .cards_2_his i{
+
+  .cards_2_his i {
     font-size: 10px;
   }
 
-  .cards_notif{
+  .cards_notif {
     width: 370px;
   }
-  .marque{
+
+  .marque {
     width: 100%;
     flex-direction: column;
     align-items: center;
   }
-  .les_detail{
+
+  .les_detail {
     flex-direction: column;
   }
-  .stocks{
+
+  .stocks {
     width: 100%;
   }
 
@@ -3285,18 +3314,21 @@ label {
     display: flex;
   }
 
-   .cards_notif{
+  .cards_notif {
     width: 300px;
   }
+
   .analytic {
     width: 310px;
     height: 130px;
   }
-    .stocks{
-      overflow-x: auto;
+
+  .stocks {
+    overflow-x: auto;
     width: 100%;
   }
-  .table2{
+
+  .table2 {
     width: 100%;
   }
 }
@@ -3310,11 +3342,13 @@ label {
     width: 280px;
     height: 130px;
   }
-    .stocks{
+
+  .stocks {
     overflow-x: auto;
     width: 100%;
   }
-  .table2{
+
+  .table2 {
     width: 100%;
 
   }
