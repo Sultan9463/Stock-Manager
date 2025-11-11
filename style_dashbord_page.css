@@ -313,7 +313,7 @@ input {
 
 .gestion_rapport {
   display: flex;
-  width: 100%;
+  width: 96%;
   gap: 50px;
 }
 
@@ -546,7 +546,7 @@ table {
 .cards {
   display: flex;
   align-items: center;
-  width: 407px;
+  width: 395px;
   height: 170px;
   border: solid rgb(242, 240, 238);
   border-radius: 20px;
@@ -730,7 +730,7 @@ table {
 .cards_notif {
   display: flex;
   align-items: center;
-  width: 405px;
+  width: 395px;
   height: 120px;
   border: solid rgb(242, 240, 238);
   border-radius: 20px;
@@ -1177,7 +1177,7 @@ select {
 .ventes {
   display: flex;
   align-items: start;
-  width: 539px;
+  width: 550px;
   height: 200px;
   border: solid rgb(242, 240, 238);
   border-radius: 20px;
@@ -2703,7 +2703,7 @@ label {
 
   .gestion_rapport {
     display: flex;
-    width: 97%;
+    width: 100%;
     gap: 13px;
   }
 
