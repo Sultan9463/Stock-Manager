@@ -1978,6 +1978,7 @@ button {
   border: none;
   background-color: #1a73e8;
   border-radius: 10px;
+  color: white;
   cursor: pointer;
 }
 
@@ -2000,6 +2001,29 @@ button {
   cursor: pointer;
 }
 
+.btn2 {
+  height: 40px;
+  width: 120px;
+  border: none;
+  color: black;
+  background-color: #dcdcdc;;
+  /* background-color: #F2F2F2; */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn3 {
+  height: 40px;
+  width: 120px;
+  border: none;
+  color: black;
+  border: 1px solid;
+  background-color: white;
+  /* background-color: #F2F2F2; */
+  border-radius: 10px;
+  cursor: pointer;
+}
+
 .btn-expedier {
   height: 40px;
   width: 120px;
@@ -2007,6 +2031,7 @@ button {
   border: none;
   background-color: #0AAEEC;
   border-radius: 10px;
+  color: white;
   cursor: pointer;
 }
 
@@ -2099,7 +2124,6 @@ button {
 /* Quand la case est cochée */
 input:checked+.slider {
   background-color: #1a73e8;
-  /* Bleu comme sur ton image */
 }
 
 input:checked+.slider:before {
@@ -2589,6 +2613,11 @@ label {
   height: 100px;
   line-height: 1.9rem;
 }
+
+.CDM-statut select{
+  height: 70px;
+}
+
 
 .CDM-statut select {
   width: 100%;
